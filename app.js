@@ -2,4 +2,24 @@
 /* global $, jQuery, alert */
 /* jslint indent: 2 */
 
-console.log("hello world!");
+(function () {
+  'use strict';
+  console.log("hello world");
+  $('.image-popup').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+  }
+  });
+}());
+
+//[].forEach.call(document.querySelectorAll('.image-popup'),
+//    function (el) {
+//    el.style.display = 'none';
+//});
+
+//Ez ugyan az mint a kommentes
+$('.image-popup').css('display', 'none');
+
+
+
